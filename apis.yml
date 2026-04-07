@@ -5,8 +5,8 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Testing
   - Functional Testing
+  - Testing
 url: >-
   https://raw.githubusercontent.com/api-evangelist/supertest/refs/heads/main/apis.yml
 created: '2026-03-25'
@@ -19,8 +19,8 @@ apis:
       SuperTest is a Node.js library for testing HTTP servers by providing a high-level abstraction for HTTP assertions with a fluent API built on SuperAgent.
     humanURL: https://github.com/ladjs/supertest
     tags:
-      - Testing
       - Functional Testing
+      - Testing
     properties:
       - type: Documentation
         url: https://github.com/ladjs/supertest#readme
