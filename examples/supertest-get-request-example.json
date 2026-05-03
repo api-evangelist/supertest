@@ -1,0 +1,23 @@
+{
+  "description": "SuperTest GET request with status and body assertions",
+  "code": "const request = require('supertest');\nconst app = require('./app');\n\ndescribe('GET /api/users', () => {\n  it('should return a list of users', async () => {\n    const response = await request(app)\n      .get('/api/users')\n      .set('Authorization', 'Bearer mytoken')\n      .expect('Content-Type', /json/)\n      .expect(200);\n\n    expect(response.body).toHaveProperty('users');\n    expect(Array.isArray(response.body.users)).toBe(true);\n  });\n});",
+  "request": {
+    "method": "GET",
+    "path": "/api/users",
+    "headers": {
+      "Authorization": "Bearer mytoken"
+    }
+  },
+  "expected_response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "users": [
+        { "id": 1, "name": "Alice", "email": "alice@example.com" },
+        { "id": 2, "name": "Bob", "email": "bob@example.com" }
+      ]
+    }
+  }
+}

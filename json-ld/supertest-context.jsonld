@@ -1,0 +1,37 @@
+{
+  "@context": {
+    "@vocab": "https://github.com/ladjs/supertest#",
+    "schema": "https://schema.org/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "SoftwareSourceCode": "schema:SoftwareSourceCode",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "version": "schema:softwareVersion",
+    "license": "schema:license",
+    "programmingLanguage": "schema:programmingLanguage",
+    "codeRepository": "schema:codeRepository",
+    "TestAction": "schema:Action",
+    "method": {
+      "@id": "schema:httpMethod",
+      "@type": "xsd:string"
+    },
+    "path": {
+      "@id": "schema:url",
+      "@type": "xsd:string"
+    },
+    "statusCode": {
+      "@id": "schema:result",
+      "@type": "xsd:integer"
+    },
+    "request": "schema:potentialAction",
+    "response": "schema:result",
+    "assertion": "schema:expectsAcceptanceOf",
+    "Project": "doap:Project",
+    "release": "doap:release",
+    "maintainer": "doap:maintainer",
+    "repository": "doap:repository"
+  }
+}

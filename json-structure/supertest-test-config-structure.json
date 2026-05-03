@@ -1,0 +1,32 @@
+{
+  "title": "SuperTest Test Configuration Structure",
+  "description": "Hierarchical structure of a SuperTest HTTP test case",
+  "structure": {
+    "method": "string — HTTP method: GET | POST | PUT | DELETE | PATCH | HEAD | OPTIONS",
+    "path": "string — URL path (e.g. '/api/users')",
+    "headers": {
+      "Authorization": "string — e.g. 'Bearer token'",
+      "Content-Type": "string — e.g. 'application/json'",
+      "[custom-header]": "string — any additional header"
+    },
+    "query": {
+      "[key]": "string|number|boolean — query parameter values"
+    },
+    "body": "object|string|array — request body payload",
+    "expect": {
+      "status": "integer — expected HTTP status code (e.g. 200, 201, 404)",
+      "headers": {
+        "Content-Type": "string — expected content type",
+        "[header-name]": "string — expected header value"
+      },
+      "body": "object|string|array — expected response body",
+      "contentType": "string — shorthand content type check (e.g. 'application/json')"
+    },
+    "timeout": "integer — request timeout in milliseconds (default 5000)",
+    "redirects": "integer — number of redirects to follow (default 0)"
+  },
+  "usage_pattern": {
+    "description": "Typical SuperTest usage in a test file",
+    "example": "request(app).get('/api/users').set('Authorization', 'Bearer token').expect(200).expect('Content-Type', /json/)"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/supertest/main/json-schema/supertest-test-config-schema.json",
+  "title": "SuperTest Test Configuration",
+  "description": "JSON Schema representing a SuperTest HTTP test request configuration for documentation and tooling purposes.",
+  "type": "object",
+  "properties": {
+    "method": {
+      "type": "string",
+      "enum": ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"],
+      "description": "HTTP method for the test request"
+    },
+    "path": {
+      "type": "string",
+      "description": "URL path to send the request to",
+      "example": "/api/users"
+    },
+    "headers": {
+      "type": "object",
+      "description": "Request headers to set",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "query": {
+      "type": "object",
+      "description": "Query string parameters",
+      "additionalProperties": true
+    },
+    "body": {
+      "description": "Request body payload (for POST/PUT/PATCH)",
+      "oneOf": [
+        { "type": "object" },
+        { "type": "string" },
+        { "type": "array" }
+      ]
+    },
+    "expect": {
+      "type": "object",
+      "description": "Assertions to make on the response",
+      "properties": {
+        "status": {
+          "type": "integer",
+          "description": "Expected HTTP status code",
+          "example": 200
+        },
+        "headers": {
+          "type": "object",
+          "description": "Expected response headers",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "body": {
+          "description": "Expected response body or body field",
+          "oneOf": [
+            { "type": "object" },
+            { "type": "string" },
+            { "type": "array" }
+          ]
+        },
+        "contentType": {
+          "type": "string",
+          "description": "Expected Content-Type",
+          "example": "application/json"
+        }
+      }
+    },
+    "timeout": {
+      "type": "integer",
+      "description": "Request timeout in milliseconds",
+      "default": 5000
+    },
+    "redirects": {
+      "type": "integer",
+      "description": "Number of redirects to follow",
+      "default": 0
+    }
+  },
+  "required": ["method", "path"]
+}

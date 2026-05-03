@@ -1,0 +1,23 @@
+{
+  "description": "SuperTest POST request with JSON body and response assertion",
+  "code": "const request = require('supertest');\nconst app = require('./app');\n\ndescribe('POST /api/users', () => {\n  it('should create a new user', async () => {\n    const response = await request(app)\n      .post('/api/users')\n      .set('Content-Type', 'application/json')\n      .send({ name: 'Charlie', email: 'charlie@example.com' })\n      .expect(201);\n\n    expect(response.body.id).toBeDefined();\n    expect(response.body.name).toBe('Charlie');\n  });\n});",
+  "request": {
+    "method": "POST",
+    "path": "/api/users",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "name": "Charlie",
+      "email": "charlie@example.com"
+    }
+  },
+  "expected_response": {
+    "status": 201,
+    "body": {
+      "id": 3,
+      "name": "Charlie",
+      "email": "charlie@example.com"
+    }
+  }
+}

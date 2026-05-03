@@ -1,0 +1,164 @@
+vocabulary:
+  title: SuperTest Vocabulary
+  description: >-
+    Domain vocabulary for the SuperTest Node.js HTTP testing library covering
+    test assertions, request configuration, response handling, and testing
+    integration concepts.
+  version: '1.0'
+  created: '2026-05-02'
+  modified: '2026-05-02'
+  tags:
+    - SuperTest
+    - Testing
+    - HTTP Testing
+    - Node.js
+    - JavaScript
+  terms:
+    - term: supertest
+      label: SuperTest
+      definition: >-
+        A Node.js library for testing HTTP servers providing a high-level
+        abstraction for HTTP assertions with a fluent API. Wraps SuperAgent
+        and adds request/response assertion capabilities.
+      related:
+        - superagent
+        - request
+        - expect
+
+    - term: superagent
+      label: SuperAgent
+      definition: >-
+        The underlying HTTP client library that SuperTest is built upon.
+        SuperAgent provides the request building and sending mechanism;
+        SuperTest adds testing assertions on top.
+      related:
+        - supertest
+        - http-client
+
+    - term: request
+      label: Request Object
+      definition: >-
+        The SuperTest request object created by calling request(app) with an
+        Express/Koa app or http.Server instance. Used to chain HTTP method
+        calls, set headers, and attach assertions.
+      related:
+        - supertest
+        - agent
+
+    - term: agent
+      label: Agent
+      definition: >-
+        A persistent SuperTest agent (request.agent(app)) that maintains
+        session cookies across multiple requests, useful for testing authenticated
+        flows that require cookies to persist between requests.
+      related:
+        - request
+        - cookie
+        - session
+
+    - term: expect
+      label: Expect Assertion
+      definition: >-
+        A chained assertion method on the SuperTest request. Can assert on
+        status code (.expect(200)), header values (.expect('Content-Type', /json/)),
+        response body (.expect({ key: value })), or custom functions.
+      related:
+        - assertion
+        - status
+        - body
+
+    - term: fluent-api
+      label: Fluent API
+      definition: >-
+        SuperTest's method-chaining interface where request configuration
+        and assertions are composed via chained method calls on the request
+        object, enabling concise and readable test code.
+      related:
+        - supertest
+        - chaining
+
+    - term: ephemeral-port
+      label: Ephemeral Port Binding
+      definition: >-
+        When a server passed to SuperTest is not yet listening, SuperTest
+        automatically binds it to an available ephemeral port for the duration
+        of the test, avoiding the need to manually manage port assignments.
+      related:
+        - server
+        - listen
+
+    - term: set
+      label: Set Header
+      definition: >-
+        The .set(header, value) method for adding HTTP request headers to
+        a SuperTest request. Also accepts an object of key/value pairs to
+        set multiple headers at once.
+      related:
+        - headers
+        - request
+
+    - term: send
+      label: Send Body
+      definition: >-
+        The .send(data) method for attaching a request body to a SuperTest
+        request. Accepts objects (serialized to JSON), strings, or Buffers.
+        Automatically sets Content-Type to application/json for objects.
+      related:
+        - body
+        - request
+
+    - term: query
+      label: Query Parameters
+      definition: >-
+        The .query(params) method for appending query string parameters to
+        the request URL. Accepts an object or string representation.
+      related:
+        - request
+        - url
+
+    - term: attach
+      label: File Attachment
+      definition: >-
+        The .attach(field, file) method for adding file uploads to a
+        multipart/form-data request, enabling testing of file upload endpoints.
+      related:
+        - multipart
+        - form-data
+
+    - term: redirects
+      label: Redirect Following
+      definition: >-
+        The .redirects(n) method controlling how many HTTP redirects
+        SuperTest will follow automatically before completing the request.
+        Default is 0 (no redirect following).
+      related:
+        - request
+        - location
+
+    - term: timeout
+      label: Request Timeout
+      definition: >-
+        The .timeout(ms) method for setting the maximum time in milliseconds
+        SuperTest will wait for a response before failing the test with a timeout error.
+      related:
+        - request
+        - error
+
+    - term: cookie
+      label: Cookie Assertion
+      definition: >-
+        SuperTest's ability to assert cookie values using .expect('set-cookie', /pattern/)
+        or via the agent for persistent cookie testing across requests.
+      related:
+        - agent
+        - session
+
+    - term: integration-testing
+      label: Integration Testing
+      definition: >-
+        The primary use case for SuperTest: testing complete HTTP request/response
+        cycles including routing, middleware, authentication, and database interaction
+        as an end-to-end integration test, rather than unit testing individual functions.
+      related:
+        - end-to-end
+        - testing
