@@ -68,7 +68,7 @@ common:
     url: https://github.com/ladjs/supertest/blob/master/LICENSE
   - type: Issues
     url: https://github.com/ladjs/supertest/issues
-  - type: Releases
+  - type: ReleaseNotes
     url: https://github.com/ladjs/supertest/releases
 maintainers:
   - FN: Kin Lane
