@@ -1,4 +1,17 @@
 aid: supertest
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/supertest.png
 name: SuperTest
 description: >-
   SuperTest is a Node.js library for testing HTTP servers by providing a high-level
