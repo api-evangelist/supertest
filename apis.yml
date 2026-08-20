@@ -31,6 +31,17 @@ tags:
   - HTTP Testing
   - Node.js
   - JavaScript
+  - Open-Source
+  - API Testing
+  - Integration Testing
+  - SuperAgent
+  - Fluent API
+tags_raw:
+  - Testing
+  - Functional Testing
+  - HTTP Testing
+  - Node.js
+  - JavaScript
   - Open Source
   - API Testing
   - Integration Testing
@@ -46,6 +57,14 @@ apis:
       codes, headers, response bodies, cookies, and more.
     humanURL: https://github.com/ladjs/supertest
     tags:
+      - Testing
+      - HTTP Testing
+      - Node.js
+      - JavaScript
+      - Open-Source
+      - API Testing
+      - Integration Testing
+    tags_raw:
       - Testing
       - HTTP Testing
       - Node.js
