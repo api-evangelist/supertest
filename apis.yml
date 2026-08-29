@@ -1,4 +1,15 @@
 aid: supertest
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
@@ -88,6 +99,10 @@ apis:
       - type: Vocabulary
         url: https://raw.githubusercontent.com/api-evangelist/supertest/refs/heads/main/vocabulary/supertest-vocabulary.yml
 common:
+  - type: CodeOfConduct
+    url: https://github.com/forwardemail/.github/blob/main/CODE_OF_CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/forwardemail/.github/blob/main/CONTRIBUTING.md
   - type: Website
     url: https://github.com/ladjs/supertest
   - type: Documentation
