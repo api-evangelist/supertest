@@ -1,14 +1,19 @@
 aid: supertest
 deliveryModel:
-  model: unknown
-  open_source: unknown
+  model: self-hosted
+  license: MIT
+  license_evidence:
+    repo: ladjs/supertest
+    spdx: MIT
+    stars: 14404
+  open_source: true
   commercial: false
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  label: Self-hosted open source · you run it yourself
+  confidence: medium
   source:
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-license
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
@@ -42,7 +47,7 @@ tags:
   - HTTP Testing
   - Node.js
   - JavaScript
-  - Open-Source
+  - Open Source
   - API Testing
   - Integration Testing
   - SuperAgent
@@ -58,6 +63,7 @@ tags_raw:
   - Integration Testing
   - SuperAgent
   - Fluent API
+  - Open-Source
 apis:
   - aid: supertest:supertest
     name: SuperTest
@@ -72,7 +78,7 @@ apis:
       - HTTP Testing
       - Node.js
       - JavaScript
-      - Open-Source
+      - Open Source
       - API Testing
       - Integration Testing
     tags_raw:
@@ -83,6 +89,7 @@ apis:
       - Open Source
       - API Testing
       - Integration Testing
+      - Open-Source
     properties:
       - type: Documentation
         url: https://github.com/ladjs/supertest#readme
