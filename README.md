@@ -66,54 +66,132 @@
 
 SuperTest is a Node.js library for testing HTTP servers by providing a high-level abstraction for HTTP assertions with a fluent API built on SuperAgent. Maintained by the Forward Email / ladjs open source organization, SuperTest allows developers to pass any http.Server or Express/Koa application and test HTTP requests and responses with chained assertions. It is widely used with Mocha, Jest, and other JavaScript testing frameworks for integration and end-to-end API testing.
 
-**URL:** [APIs.yml](https://raw.githubusercontent.com/api-evangelist/supertest/refs/heads/main/apis.yml)
+**Areas:** Testing · Functional Testing · HTTP Testing · Node.js · JavaScript · Open Source · API Testing · Integration Testing · SuperAgent · Fluent API
 
-## Tags
+## SuperTest on APIs.io
 
-- Testing
-- Functional Testing
-- HTTP Testing
-- Node.js
-- JavaScript
-- Open Source
-- API Testing
-- Integration Testing
-- SuperAgent
-- Fluent API
+Everything profiled for SuperTest is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/supertest/](https://apis.io/providers/supertest/)** — or go straight to one of the APIs or properties below.
 
-## APIs
+### APIs (1)
 
-### SuperTest
+- [SuperTest](https://apis.io/apis/supertest/supertest/) — SuperTest is a Node.js library for testing HTTP servers by providing a high-level abstraction for HTTP assertions with a fluent API built on SuperAgent.…
 
-SuperTest is a Node.js library for testing HTTP servers by providing a high-level abstraction for HTTP assertions with a fluent API built on SuperAgent.
+### Published properties
 
-- **Human URL:** [https://github.com/ladjs/supertest](https://github.com/ladjs/supertest)
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-#### Properties
+#### JSON Schema (1)
 
-| Type | URL |
-|------|-----|
-| Documentation | [README](https://github.com/ladjs/supertest#readme) |
-| GitHub Repository | [ladjs/supertest](https://github.com/ladjs/supertest) |
-| NPM Package | [supertest on npm](https://www.npmjs.com/package/supertest) |
-| JSON Schema | [supertest-test-config-schema.json](json-schema/supertest-test-config-schema.json) |
-| JSON Structure | [supertest-test-config-structure.json](json-structure/supertest-test-config-structure.json) |
-| JSON-LD | [supertest-context.jsonld](json-ld/supertest-context.jsonld) |
-| Vocabulary | [supertest-vocabulary.yml](vocabulary/supertest-vocabulary.yml) |
+The data models the API reads and writes.
 
-## Common Properties
+- [SuperTest Test Configuration](https://apis.io/schemas/supertest/supertest-test-config/)
 
-| Type | URL |
-|------|-----|
-| Website | [https://github.com/ladjs/supertest](https://github.com/ladjs/supertest) |
-| Documentation | [https://github.com/ladjs/supertest#readme](https://github.com/ladjs/supertest#readme) |
-| GitHub Organization | [https://github.com/ladjs](https://github.com/ladjs) |
-| NPM Package | [https://www.npmjs.com/package/supertest](https://www.npmjs.com/package/supertest) |
-| License | [MIT License](https://github.com/ladjs/supertest/blob/master/LICENSE) |
-| Issues | [GitHub Issues](https://github.com/ladjs/supertest/issues) |
-| Releases | [GitHub Releases](https://github.com/ladjs/supertest/releases) |
+#### JSON Structure (1)
 
-## Maintainers
+Data models expressed in JSON Structure.
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+- [Supertest Test Config Structure](https://apis.io/json-structure/supertest/supertest-test-config-structure/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Supertest Context](https://apis.io/jsonld/supertest/supertest-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [SuperTest Vocabulary](https://apis.io/vocabularies/supertest/supertest-vocabulary/)
+
+#### Examples (2)
+
+Example requests and responses.
+
+- [Supertest Get Request Example](https://apis.io/examples/supertest/supertest-get-request-example/)
+- [Supertest Post Request Example](https://apis.io/examples/supertest/supertest-post-request-example/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [SuperTest — jsonschema rules](https://apis.io/rules/supertest/supertest-jsonschema-spectral-rules/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Supertest Plans Pricing](https://apis.io/plans/supertest/supertest-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Supertest Rate Limits](https://apis.io/rate-limits/supertest/supertest-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Supertest Finops](https://apis.io/finops/supertest/supertest-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://github.com/ladjs/supertest)
+- [Documentation](https://github.com/ladjs/supertest#readme)
+- [GitHub](https://github.com/ladjs)
+
+## API Evangelist rating
+
+**Kin Score 22.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 17.9 |
+| Contract governance | 23.5 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/supertest/](https://apis.io/providers/supertest/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for SuperTest: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/supertest/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
